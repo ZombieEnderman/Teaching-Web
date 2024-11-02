@@ -2,29 +2,41 @@
 <!-- 內嵌連結用於將外來資源嵌入網頁，以便讓該網頁使用 -->
 <!-- 外部連結用於造訪其他網頁 -->
 <!-- 兩種連結皆可用絕對路徑或相對路徑 -->
-
+<!-- 內嵌連結有link標籤與img標籤，外部連結僅a標籤 -->
 <!-- link標籤需寫在head區域內，a標籤與img標籤則寫在body區域內 -->
+
+<!-- link標籤可設定網頁的圖示、外觀...等，是單獨標籤 -->
+<!-- href屬性用來設定資源的來源路徑 -->
+<!-- type屬性用來設定資源的類型，icon表示是網頁的圖示 -->
+<!-- rel屬性用來設定， -->
+
+<!-- img標籤是單獨標籤，用來放置圖片，如果未加上跳行標籤就寫文字時，該文字會接在圖片後方 -->
+<!-- src屬性用來設定圖片的來源路徑 -->
+
+<!-- a標籤是成對標籤，開始與結束所包圍的區域即為顯示的文字，使用者點擊該文字將前往指定網頁 -->
+<!-- href屬性用來設定欲前往的網頁之路徑，如果不填寫則會造訪自身 -->
 
 <!DOCTYPE html>
 <html lang="zh-hant">
 <head>
     <meta charset="UTF-8">
     <title>內嵌與外部連結主頁</title>
-    <link rel="icon" type="img/icon" href="portalmin.png">
+    <link rel="icon" type="img/icon" href="portalmin.png">  <!-- 設定網頁的圖示為"portalmin.png"(使用相對路徑) -->
 </head>
 
 <body>
     <h1>傳送門</h1>
     <h3><mark>絕對路徑</mark></h3>
     <p> <!-- 第一段 -->
-        <img src="https://secret.tut.edu.tw/var/file/1/1001/img/430/logo.jpg"><br>
-        <a href="https://zh.wikipedia.org/zh-tw/HTML">去wiki</a>
+        <img src="https://secret.tut.edu.tw/var/file/1/1001/img/430/logo.jpg"><br>  <!-- 使用絕對路徑來放置圖片 -->
+        <a href="https://zh.wikipedia.org/zh-tw/HTML">去wiki</a>                    <!-- 使用絕對路徑造訪網頁 -->
     </p>
 
     <h3><mark>相對路徑</mark></h3>
     <p> <!-- 第二段 -->
-        <img src="portal.png"><br>
-        <a href="test/分頁.html">去分頁</a>
+        <img src="portal.png"><br>             <!-- 使用相對路徑來放置圖片 -->
+        <a href="test/分頁.html">去分頁</a>     <!-- 使用相對路徑造訪網頁 -->
+        <a href="">重新整理</a>                 <!-- 路徑為自己(造訪自身) -->
     </p>
 </body>
 </html>
