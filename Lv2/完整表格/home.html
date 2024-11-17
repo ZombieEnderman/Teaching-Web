@@ -1,10 +1,55 @@
+<!-- 完整的表格分為四個部分，表格名稱、表格標題區、表格內容區、表格註解區 -->
+<!-- 表格的所有部分皆位於本體之下，列與格則位於表格名稱以外的其他部分之下 -->
+
+<!-- 表格名稱是獨立的一列，無須使用列與格的標籤，而表格名稱使用caption標籤 -->
+<!-- 表格名稱無外框，其文字是粗體字、置中對齊 -->
+
+<!-- 表格標題區，使用thead標籤 -->
+
+<!-- 表格註解區，使用tfoot標籤 -->
+
+<!-- 表格內容區，使用tbody標籤 -->
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-hant">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>完整表格</title>
 </head>
+
 <body>
-    
+    <table border="1">
+        <caption>電腦配備預算</caption>
+        <thead>
+            <tr>
+                <th>配備名稱</th>
+                <th>金額</th>
+            </tr>
+        </thead>
+
+        <tfoot>
+            <tr>
+                <td>合計金額</td>
+                <td>60,000NT</td>
+            </tr>
+        </tfoot>
+
+        <tbody>
+            <tr>
+                <td>CPU i9-1200f</td>
+                <td>30,000NT</td>
+            </tr>
+
+            <tr>
+                <td>GPU RTX4090</td>
+                <td>20,000NT</td>
+            </tr>
+
+            <tr>
+                <td>4k曲面螢幕</td>
+                <td>10,000NT</td>
+            </tr>
+        </tbody>
+    </table>
 </body>
 </html>
