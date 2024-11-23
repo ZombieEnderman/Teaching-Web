@@ -1,0 +1,43 @@
+/*  */
+
+body  {
+    background: #000000;
+    font-size: 16pt;
+}
+
+h1  {
+    color: #00ff00;
+    font-size: 32pt;
+    text-align: center;
+}
+
+h2  {
+    color: #ffffff;
+    font-size: 24pt;
+    text-align: right;
+}
+
+p  {
+    background-color: #00ffff;
+}
+
+mark  {
+    background-color: #0000ff;
+    color: #ff0000;
+}
+
+strong  {
+    color: #ff00ff;
+}
+
+em  {
+    color: #ff0000;
+}
+
+del  {
+    color: #444444;
+}
+
+ins  {
+    color: #777777;
+}
