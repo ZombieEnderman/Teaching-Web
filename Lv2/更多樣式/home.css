@@ -1,43 +1,39 @@
+/* 如果對body標籤設定樣式，則整個網頁都會套用此樣式 */
 /*  */
+
+/* "font-size" 屬性可以調整文字大小，pt、px */
+/* "text-align" 屬性可以設定文字的對齊方式，有置中(center)、靠左(left)、靠右(right) */
+/* "font-family" 屬性可以設定文字的字型，可以同時使用多種字型，欲使用多種字型需用逗號隔開 */
+/* "font-style" 屬性可以設定文字是否為斜體，normal表示非斜體、italic表示是斜體 */
+/* "font-weight" 屬性可以設定文字的粗細程度，bold */
 
 body  {
     background: #000000;
     font-size: 16pt;
+    text-align: center;
+    font-family: Arial;
 }
 
 h1  {
     color: #00ff00;
     font-size: 32pt;
-    text-align: center;
+    font-family: 標楷體, Arial;
 }
 
 h2  {
     color: #ffffff;
-    font-size: 24pt;
     text-align: right;
+    font-family: 新細明體;
 }
 
 p  {
-    background-color: #00ffff;
-}
-
-mark  {
-    background-color: #0000ff;
     color: #ff0000;
-}
-
-strong  {
-    color: #ff00ff;
+    background-color: #00ffff;
+    text-align: left;
 }
 
 em  {
-    color: #ff0000;
-}
-
-del  {
-    color: #444444;
-}
-
-ins  {
-    color: #777777;
+    color: #ff00ff;
+    font-style: normal;
+    font-weight: bold;
 }
