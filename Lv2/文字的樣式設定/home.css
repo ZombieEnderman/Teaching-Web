@@ -1,9 +1,9 @@
-/* 如果對body標籤設定樣式，則整個網頁都會套用此樣式 */
-/* h系列的標籤則不會受到影響，需額外設定其樣式 */
-
 /* "font-size" 屬性可以調整文字大小，可用關鍵字或數值調整，數值越大文字越大 */
 /* 關鍵字由小至大為 xx-small、x-small、small、medium(預設大小)、large、x-large、xx-large、xxx-large */
 /* 使用數值時須加上單位，常見的單位有像素(px)、點數(pt)、公分(cm)、毫米(mm)、英寸(in) */
+
+/* 如果對body標籤設定樣式，則整個網頁都會套用此樣式 */
+/* h系列的標籤則不會被body的大小設定所影響，需額外設定其大小 */
 
 /* "text-align" 屬性可以設定文字的對齊方式，有置中(center)、靠左(left)、靠右(right)、左右對齊(justify) */
 /* "font-family" 屬性可以設定文字的字型，可以同時使用多種字型，欲使用多種字型需用逗號隔開 */
@@ -13,6 +13,7 @@
 /* normal表示正常粗細(等於數值400)、bold表示粗體(等於數值700) */
 
 body  {
+    color: #ffff00;
     background: #000000;
     font-size: large;
     text-align: center;
