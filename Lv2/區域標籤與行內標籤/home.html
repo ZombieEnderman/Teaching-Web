@@ -12,6 +12,11 @@
     <meta charset="UTF-8">
     <title>區域標籤與行內標籤</title>
     <style>
+        body  {
+            background-color: black;
+            color: white;
+        }
+
         div  {
             background-color: aqua;
         }
@@ -29,32 +34,41 @@
     <span>第2行</span>
 
     <table border="1">
-        <tr>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
+        <colgroup style="background-color: chartreuse;"><col></colgroup>
+        <colgroup style="background-color: blueviolet;"><col><col></colgroup>
+        <colgroup style="background-color: darkgreen;"><col></colgroup>
+        <colgroup style="background-color: chocolate;"><col></colgroup>
+
+        <tr>    <!-- 第1列 -->
+            <th>str</th>
+            <th>list</th>
+            <th>tuple</th>
+            <th>set</th>
+            <th>dict</th>
         </tr>
 
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+        <tr>    <!-- 第2列 -->
+            <td>不可變</td>
+            <td>可變</td>
+            <td>不可變</td>
+            <td>可變(增減)</td>
+            <td>可變</td>
         </tr>
 
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+        <tr>    <!-- 第3列 -->
+            <td>有序</td>
+            <td>有序</td>
+            <td>有序</td>
+            <td>無序</td>
+            <td>無序</td>
         </tr>
 
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+        <tr>    <!-- 第4列 -->
+            <td>元素單一化</td>
+            <td>元素多樣化</td>
+            <td>元素多樣化</td>
+            <td>元素多樣化</td>
+            <td>元素多樣化</td>
         </tr>
     </table>
 </body>
