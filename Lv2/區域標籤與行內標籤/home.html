@@ -1,0 +1,61 @@
+<!-- 標籤依特性可分為區域標籤、行內標籤 -->
+<!-- 區域標籤用於將內容分成一個區塊，且會用空白來佔滿該列的剩餘空間 -->
+<!-- 有些標籤會再多出上下空白列來分隔其它內容，例如:p標籤、h系列標籤、ol標籤、ul標籤、dl標籤 -->
+<!-- 有些則不會，例如:div標籤、table標籤、li標籤、dt標籤、dd標籤、tr標籤 -->
+
+<!-- 行內標籤用於將文字分成一行，且不會霸佔該列的剩餘空間 -->
+<!-- 常見的標籤有span標籤、caption標籤、colgroup標籤、img標籤、a標籤、col標籤、td標籤、th標籤 -->
+
+<!DOCTYPE html>
+<html lang="zh-hant">
+<head>
+    <meta charset="UTF-8">
+    <title>區域標籤與行內標籤</title>
+    <style>
+        div  {
+            background-color: aqua;
+        }
+
+        span  {
+            background-color: brown;
+        }
+    </style>
+</head>
+
+<body>
+    <div>第1區</div>    <!-- 此標籤僅用於區分區塊，無其他作用 -->
+    <div>第2區</div>
+    <span>第1行</span>  <!-- 此標籤僅用於標記內容，無其他作用 -->
+    <span>第2行</span>
+
+    <table border="1">
+        <tr>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+</body>
+</html>
