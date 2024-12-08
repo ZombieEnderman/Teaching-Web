@@ -4,7 +4,11 @@
 <!-- 有些則不會，例如:div標籤、table標籤、li標籤、dt標籤、dd標籤、tr標籤 -->
 
 <!-- 行內標籤用於將文字分成一行，且不會霸佔該列的剩餘空間 -->
-<!-- 常見的標籤有span標籤、caption標籤、colgroup標籤、img標籤、a標籤、col標籤、td標籤、th標籤 -->
+<!-- 常見的標籤有span標籤、caption標籤、img標籤、a標籤、td標籤、th標籤、em標籤...等 -->
+
+<!-- colgroup標籤用來將表格的行進行分組，本標籤需位於table之下且要與tr分開寫 -->
+<!-- col標籤是單獨標籤，且須位於colgroup標籤之下，本標籤用於表示表格的行，有多少col就有多少行 -->
+<!-- col標籤還有span屬性，用於將連續的指定行數視為同一行，以便設定相同樣式 -->
 
 <!DOCTYPE html>
 <html lang="zh-hant">
@@ -12,9 +16,8 @@
     <meta charset="UTF-8">
     <title>區域標籤與行內標籤</title>
     <style>
-        body  {
-            background-color: black;
-            color: white;
+        body   {
+            font-size: 30px;
         }
 
         div  {
@@ -34,10 +37,12 @@
     <span>第2行</span>
 
     <table border="1">
-        <colgroup style="background-color: chartreuse;"><col></colgroup>
-        <colgroup style="background-color: blueviolet;"><col><col></colgroup>
-        <colgroup style="background-color: darkgreen;"><col></colgroup>
-        <colgroup style="background-color: chocolate;"><col></colgroup>
+        <colgroup>
+            <col style="background-color: chartreuse;">
+            <col style="background-color: blueviolet;" span="2">
+            <col style="background-color: darkgreen;">
+            <col style="background-color: chocolate;">
+        </colgroup>
 
         <tr>    <!-- 第1列 -->
             <th>str</th>
