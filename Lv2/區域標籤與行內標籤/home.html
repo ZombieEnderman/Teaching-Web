@@ -6,9 +6,9 @@
 <!-- 行內標籤用於將文字分成一行，且不會霸佔該列的剩餘空間 -->
 <!-- 常見的標籤有span標籤、caption標籤、img標籤、a標籤、td標籤、th標籤、em標籤...等 -->
 
-<!-- colgroup標籤用來將表格的行進行分組，本標籤需位於table之下且要與tr分開寫 -->
-<!-- col標籤是單獨標籤，且須位於colgroup標籤之下，本標籤用於表示表格的行，有多少col就有多少行 -->
-<!-- col標籤還有span屬性，用於將連續的指定行數視為同一行，以便設定相同樣式 -->
+<!-- colgroup標籤用來將表格的欄進行分群，本標籤需位於table之下且要與tr分開寫 -->
+<!-- col標籤是單獨標籤，且須位於colgroup標籤之下，本標籤用於表示表格的欄，有多少col就有多少欄 -->
+<!-- col標籤還有span屬性，用於將連續的指定欄數視為同一群，以便設定相同樣式 -->
 
 <!DOCTYPE html>
 <html lang="zh-hant">
@@ -37,12 +37,12 @@
     <span>第2行</span>
 
     <table border="1">
-        <colgroup>
-            <col style="background-color: chartreuse;">
-            <col style="background-color: blueviolet;" span="2">
-            <col style="background-color: darkgreen;">
-            <col style="background-color: chocolate;">
-        </colgroup>
+        <colgroup>                                                    <!-- 對欄位進行分群 -->
+            <col style="background-color: chartreuse;">             <!-- 此群有1欄 -->
+            <col style="background-color: blueviolet;" span="2">    <!-- 此群有2欄 -->
+            <col style="background-color: darkgreen;">              <!-- 此群有1欄 -->
+            <col style="background-color: chocolate;">              <!-- 此群有1欄 -->
+        </colgroup>                                                   <!-- 本表格共有4群 -->
 
         <tr>    <!-- 第1列 -->
             <th>str</th>
