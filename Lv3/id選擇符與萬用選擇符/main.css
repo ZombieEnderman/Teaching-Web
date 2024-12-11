@@ -1,12 +1,16 @@
 /* id選擇符可以為指定標籤設定樣式 */
 /* id選擇符的完整格式為"標籤名稱#id" */
 /* 由於id不可重複，因此id就能代表該標籤了，所以id選擇符可簡寫為"#id" */
+/* 萬用選擇符可以代表所有標籤，萬用選擇符使用一個星號來表示 */
 
 body  {
     background: black;
     color: white;
-    font-size: 30px;
 }        /* 標籤選擇符 */
+
+*   {
+    font-size: 40px;
+}        /* 萬用選擇符 */
 
 div#red  {
     color: #d70000;
