@@ -1,0 +1,21 @@
+/* id選擇符可以為指定標籤設定樣式 */
+/* id選擇符的完整格式為"標籤名稱#id" */
+/* 由於id不可重複，因此id就能代表該標籤了，所以id選擇符可簡寫為"#id" */
+
+body  {
+    background: black;
+    color: white;
+    font-size: 30px;
+}        /* 標籤選擇符 */
+
+div#red  {
+    color: #d70000;
+}        /* 完整的id選擇符 */
+
+#yellow  {
+    color: yellow;
+}        /* 簡寫的id選擇符 */
+
+#dark   {
+    background-color: #6f6f6f;
+}        /* 簡寫的id選擇符 */
